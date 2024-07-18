@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 16px;
+}
+
+.dropMenu{
+    width: 320px;
+    box-shadow: 1px 1px 40px grey;
+}
+
+.dropMenu__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+    padding-top: 18px;
+}
+
+.dropMenu__burger{
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.dropMenu__burger img{
+    margin-right: 17px;
+}
+
+.dropMenu__burger:last-child{
+    margin-right: 0;
+}
+
+.dropMenu__search{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.navigation__list{
+    list-style: none;
+    font-weight: 600;
+    margin-bottom: 268px;
+}
+
+
+.navigation__list .navigation__item{
+    margin: 0 0 32px 24px;
+    cursor: pointer;
+}
+
+.navigation__list .navigation__item:hover{
+    position: relative;
+    color: #7E7E82;
+    transition: color 300ms;
+}
+
+.navigation__list .navigation__item:before{
+    content: '';
+    width: 1px;
+    height: 32px;
+    border-right: solid 4px #41F6D7;
+    border-radius: 3px;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    opacity: 0;
+}
+
+.navigation__list .navigation__item:hover:before{
+    content: '';
+    width: 1px;
+    height: 32px;
+    border-right: solid 4px #41F6D7;
+    border-radius: 3px;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.navigation__item--active{
+    cursor: pointer;
+    margin: 0 0 32px 24px;
+    position: relative;
+    color: #7E7E82;
+}
+
+.navigation__item--active:before{
+    content: '';
+    width: 1px;
+    height: 32px;
+    border-right: solid 4px #41F6D7;
+    border-radius: 3px;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    opacity: 1;
+}
+
+.info{
+    margin-left: 24px;
+}
+
+.info__services{
+    margin-bottom: 16px;
+}
+
+.info__services img{
+    margin-right: 16px;
+}
+
+.info__services:last-child{
+    margin-right: 0;
+}
+
+.info__mail{
+    margin-bottom:12px;
+}
+
+.info__phone{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom:40px;
+}
+
+.info__languages{
+    display: flex;
+    font-weight: 600;
+}
+
+.info__languages .language{
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.info__languages .language:hover{
+    margin-right: 7px;
+    cursor: pointer;
+    color: #7E7E82;
+}
+
+.info__languages:last-child{
+    margin-right: 0;
+}
+
+.language--active{
+    color: #7E7E82;
+}
+
+
+
+
