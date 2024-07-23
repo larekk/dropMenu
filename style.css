@@ -18,6 +18,7 @@
 .dropMenu{
     width: 320px;
     height: 100vh;
+    min-height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
