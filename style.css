@@ -6,8 +6,21 @@
     font-size: 16px;
 }
 
+.button{
+    border: none;
+    background: none;
+}
+
+.button:hover{
+   cursor: pointer;
+}
+
 .dropMenu{
     width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 1px 1px 40px grey;
 }
 
@@ -17,6 +30,22 @@
     align-items: center;
     margin-bottom: 46px;
     padding-top: 18px;
+}
+
+.dropMenu__header .button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.dropMenu__header .button__burger{
+    background: url("img/burger.svg") no-repeat center center #FF3E79;
+}
+
+.dropMenu__header .button__search{
+    background: url("img/search.svg") no-repeat center center #FF3E79;
+    margin-right: 0;
 }
 
 .dropMenu__burger{
@@ -41,13 +70,12 @@
 
 .navigation__list{
     list-style: none;
-    font-weight: 600;
-    margin-bottom: 268px;
+    font-weight: 500;
+    margin-left: 24px;
 }
 
-
 .navigation__list .navigation__item{
-    margin: 0 0 32px 24px;
+    margin: 0 0 32px 0;
     cursor: pointer;
 }
 
@@ -84,12 +112,12 @@
 
 .navigation__item--active{
     cursor: pointer;
-    margin: 0 0 32px 24px;
+    margin: 0 0 32px 0;
     position: relative;
     color: #7E7E82;
 }
 
-.navigation__item--active:before{
+.navigation__list .navigation__item--active:before{
     content: '';
     width: 1px;
     height: 32px;
@@ -101,6 +129,10 @@
     opacity: 1;
 }
 
+.dropMenu__footer{
+    margin-bottom: 32px;
+}
+
 .info{
     margin-left: 24px;
 }
@@ -109,22 +141,44 @@
     margin-bottom: 16px;
 }
 
-.info__services img{
-    margin-right: 16px;
-}
-
 .info__services:last-child{
     margin-right: 0;
 }
 
+.info__services .button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.info__services .button__profile{
+    background: url("img/profile.svg") no-repeat center center #FF3E79;
+    margin-right: 0;
+}
+
+.info__services .button__chat{
+    background: url("img/chat.svg") no-repeat center center #FF3E79;
+}
+
+.info__services .button__tel {
+    background: url("img/tel.svg") no-repeat center center #FF3E79;
+}
+
 .info__mail{
     margin-bottom:12px;
+    display: block;
+    color: black;
+    text-decoration: none;
 }
 
 .info__phone{
     font-size: 24px;
     font-weight: 700;
+    line-height: 32px;
     margin-bottom:40px;
+    display: block;
+    color: black;
+    text-decoration: none;
 }
 
 .info__languages{
