@@ -6,13 +6,20 @@
     font-size: 16px;
 }
 
-.button{
+.dropMenu .button{
     border: none;
     background: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
 }
 
-.button:hover{
-   cursor: pointer;
+.dropMenu .button:hover{
+     cursor: pointer;
+    transform: scale(1.1);
+    background-color: #41F6D7;
+    transition: all .2s;
 }
 
 .dropMenu{
@@ -23,6 +30,8 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 1px 1px 40px grey;
+    padding-top: 18px;
+    padding-left: 24px;
 }
 
 .dropMenu__header{
@@ -30,14 +39,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 46px;
-    padding-top: 18px;
-}
-
-.dropMenu__header .button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 16px;
 }
 
 .dropMenu__header .button__burger{
@@ -52,7 +53,6 @@
 .dropMenu__burger{
     display: flex;
     align-items: center;
-    margin-left: 24px;
 }
 
 .dropMenu__burger img{
@@ -72,7 +72,6 @@
 .navigation__list{
     list-style: none;
     font-weight: 500;
-    margin-left: 24px;
 }
 
 .navigation__list .navigation__item{
@@ -134,10 +133,6 @@
     margin-bottom: 32px;
 }
 
-.info{
-    margin-left: 24px;
-}
-
 .info__services{
     margin-bottom: 16px;
 }
@@ -146,12 +141,6 @@
     margin-right: 0;
 }
 
-.info__services .button{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 16px;
-}
 .info__services .button__profile{
     background: url("img/profile.svg") no-repeat center center #FF3E79;
     margin-right: 0;
